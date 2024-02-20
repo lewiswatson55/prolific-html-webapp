@@ -36,18 +36,18 @@
 <p class="m-2">In this task you will read roughly thirty examples of sentences and two paraphrases created by a computer program. The program aims to rewrite the sentence so that it means the same thing, but using different words and/or different word order. </p>
 
 <p class="m-2"><strong>Please read all the sentences carefully</strong>, this should take you about 10 minutes (if you do the task very quickly or take longer than an hour (60 mins) your HIT will be rejected).</p>
-<p class="m-2">You will be asked to choose which system performs better, for the following aspect of the paraphrases:</p>
-<ul>
-<!--    <li>Which system output is the most <strong>fluent and grammatical</strong>?</li>-->
+<p class="m-2">You will be asked to choose which system performs better, for three aspects of the paraphrases:</p>
+<ol>
+    <li>Which system output is the most <strong>fluent and grammatical</strong>?</li>
     <li>To what extent is the <strong>meaning</strong> expressed in the original sentence <strong>preserved</strong> in the rewritten version, with no additional information added?</li>
-<!--    <li>Does the rewritten version use <strong>different words or phrasing</strong> to the original? You should choose the system that uses the <strong>most</strong> different words or word order.</li>-->
-</ul>
+    <li>Does the rewritten version use <strong>different words or phrasing</strong> to the original? You should choose the system that uses the <strong>most</strong> different words or word order.</li>
+</ol>
 
 <!-- <p class="m-2">In some cases the computer program will choose to add information which is not in the original sentence or miss out information. If this is the case then you should probably rank it lower in terms of meaning. </p>  -->
 <!-- <p class="m-2">In some cases, the rewritten sentence might be a copy of the original sentence, or might only have a single word changed. </p> -->
 
 <p class="m-2">Remember that you are being asked to <strong>rate the system</strong>, not the original.</p>
-<p class="m-2">Some of the sentences only have small differences! If the control samples are not answered correctly then we will assume that you have answered at random and reject the HIT.</p>
+<p class="m-2">Some of the sentences only have small differences! Be careful to choose the one that is <strong>most different</strong> for the dissimilarity category. If the control samples are not answered correctly then we will assume that you have answered at random and reject the HIT.</p>
 <p class="m-2">A small number of samples may have two choices that are *exactly* the same - in these cases please pick an answer at random, this will not cause the HIT to be rejected.</p>
 
 <h4>Examples</h4>
@@ -75,20 +75,20 @@
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most grammatical-->
-<!--                <br/>-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluencyex0" value="A" id="fluencyex01" onclick="updateExamples(0, 'fluency', 'A');"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluencyex0" value="B" id="fleuncyex02" onclick="updateExamples(0, 'fluency', 'B');"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most grammatical
+                <br/>
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluencyex0" value="A" id="fluencyex01" onclick="updateExamples(0, 'fluency', 'A');"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluencyex0" value="B" id="fleuncyex02" onclick="updateExamples(0, 'fluency', 'B');"> B
+                    </label>
+                </div>
+            </div>
             <div class="col-2 form-group text-center">
                 Closest in meaning
                 <br/>
@@ -106,23 +106,23 @@
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissimex0" value="A" id="dissimex01" onclick="updateExamples(0, 'dissim', 'A');"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissimex0" value="B" id="dissimex02" onclick="updateExamples(0, 'dissim', 'B');"> B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissimex0" value="A" id="dissimex01" onclick="updateExamples(0, 'dissim', 'A');"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissimex0" value="B" id="dissimex02" onclick="updateExamples(0, 'dissim', 'B');"> B
+                    </label>
+                </div> 
+            </div>
         </div>
-<!--        <p class="m-1">Fluency: System A has repeated a word, but System B is grammatically correct, so click 'B'. <span id="exfluencyresult0" style="font-size:24px; color:red;"></span></p>-->
+        <p class="m-1">Fluency: System A has repeated a word, but System B is grammatically correct, so click 'B'. <span id="exfluencyresult0" style="font-size:24px; color:red;"></span></p>
         <p class="m-0">Meaning: System A is closer to the original meaning that System B, so click 'A'. <span id="exmeaningresult0" style="font-size:24px; color:red;"></span></p>
-<!--        <p class="m-0">Dissimilarity: System A also uses more different words/phrasing than System B, so click 'A'. <span id="exdissimresult0" style="font-size:24px; color:red;"></span></p>-->
+        <p class="m-0">Dissimilarity: System A also uses more different words/phrasing than System B, so click 'A'. <span id="exdissimresult0" style="font-size:24px; color:red;"></span></p>
 
     </div>
 </div>
@@ -147,20 +147,20 @@
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most grammatical-->
-<!--                <br/>-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluencyex1" value="A" id="fluencyex11" onclick="updateExamples(1, 'fluency', 'A');"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluencyex1" value="B" id="fleuncyex12" onclick="updateExamples(1, 'fluency', 'B');"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most grammatical
+                <br/>
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluencyex1" value="A" id="fluencyex11" onclick="updateExamples(1, 'fluency', 'A');"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluencyex1" value="B" id="fleuncyex12" onclick="updateExamples(1, 'fluency', 'B');"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -179,24 +179,23 @@
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissimex1" value="A" id="dissimex11" onclick="updateExamples(1, 'dissim', 'A');"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissimex1" value="B" id="dissimex12" onclick="updateExamples(1, 'dissim', 'B');"> B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
-
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissimex1" value="A" id="dissimex11" onclick="updateExamples(1, 'dissim', 'A');"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissimex1" value="B" id="dissimex12" onclick="updateExamples(1, 'dissim', 'B');"> B
+                    </label>
+                </div> 
+            </div>
         </div>
-<!--        <p class="m-1">Fluency: Both outputs have grammar errors, but System B is closer to being correct, so click 'B'. <span id="exfluencyresult1" style="font-size:24px; color:red;"></span></p>-->
+        <p class="m-1">Fluency: Both outputs have grammar errors, but System B is closer to being correct, so click 'B'. <span id="exfluencyresult1" style="font-size:24px; color:red;"></span></p>
         <p class="m-1">Meaning: System A means the same thing as the original, but System B doesn't, so click 'A'. <span id="exmeaningresult1" style="font-size:24px; color:red;"></span></p>
-<!--        <p class="m-1">Dissimilarity: System B uses more different words/phrasing than System A, so click 'B'. <span id="exdissimresult1" style="font-size:24px; color:red;"></span></p>-->
+        <p class="m-1">Dissimilarity: System B uses more different words/phrasing than System A, so click 'B'. <span id="exdissimresult1" style="font-size:24px; color:red;"></span></p>
     </div>
 </div>
 
@@ -219,28 +218,28 @@ function updateExamples(example, field, score)
                 document.getElementById('exmeaningresult0').innerHTML = wrongHtml;
             }
         }
-        // if (field == 'dissim')
-        // {
-        //     if (score == 'A')
-        //     {
-        //         document.getElementById('exdissimresult0').innerHTML = correctHtml;
-        //     }
-        //     else
-        //     {
-        //         document.getElementById('exdissimresult0').innerHTML = wrongHtml;
-        //     }
-        // }
-        // if (field == 'fluency')
-        // {
-        //     if (score == 'B')
-        //     {
-        //         document.getElementById('exfluencyresult0').innerHTML = correctHtml;
-        //     }
-        //     else
-        //     {
-        //         document.getElementById('exfluencyresult0').innerHTML = wrongHtml;
-        //     }
-        // }
+        if (field == 'dissim')
+        {
+            if (score == 'A')
+            {
+                document.getElementById('exdissimresult0').innerHTML = correctHtml;
+            }
+            else
+            {
+                document.getElementById('exdissimresult0').innerHTML = wrongHtml;
+            }
+        }
+        if (field == 'fluency')
+        {
+            if (score == 'B')
+            {
+                document.getElementById('exfluencyresult0').innerHTML = correctHtml;
+            }
+            else
+            {
+                document.getElementById('exfluencyresult0').innerHTML = wrongHtml;
+            }
+        }
     }
 
     if (example == 1)
@@ -257,29 +256,28 @@ function updateExamples(example, field, score)
             }
         }
 
-        // if (field == 'dissim')
-        // {
-        //     if (score == 'B')
-        //     {
-        //         document.getElementById('exdissimresult1').innerHTML = correctHtml;
-        //     }
-        //     else
-        //     {
-        //         document.getElementById('exdissimresult1').innerHTML = wrongHtml;
-        //     }
-        // }
-        // if (field == 'fluency')
-        // {
-        //     if (score == 'B')
-        //     {
-        //         document.getElementById('exfluencyresult1').innerHTML = correctHtml;
-        //     }
-        //     else
-        //     {
-        //         document.getElementById('exfluencyresult1').innerHTML = wrongHtml;
-        //     }
-        // }
-
+        if (field == 'dissim')
+        {
+            if (score == 'B')
+            {
+                document.getElementById('exdissimresult1').innerHTML = correctHtml;
+            }
+            else
+            {
+                document.getElementById('exdissimresult1').innerHTML = wrongHtml;
+            }
+        }
+        if (field == 'fluency')
+        {
+            if (score == 'B')
+            {
+                document.getElementById('exfluencyresult1').innerHTML = correctHtml;
+            }
+            else
+            {
+                document.getElementById('exfluencyresult1').innerHTML = wrongHtml;
+            }
+        }
     }
     return false;
 }
@@ -310,20 +308,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency0" value="A" id="fluency0A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency0" value="B" id="fleuncy0B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency0" value="A" id="fluency0A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency0" value="B" id="fleuncy0B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -342,19 +340,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim0" value="A" id="dissim0A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim0" value="B" id="dissim0B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim0" value="A" id="dissim0A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim0" value="B" id="dissim0B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -384,20 +382,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency1" value="A" id="fluency1A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency1" value="B" id="fleuncy1B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency1" value="A" id="fluency1A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency1" value="B" id="fleuncy1B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -416,19 +414,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim1" value="A" id="dissim1A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim1" value="B" id="dissim1B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim1" value="A" id="dissim1A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim1" value="B" id="dissim1B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -459,20 +457,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency2" value="A" id="fluency2A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency2" value="B" id="fleuncy2B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency2" value="A" id="fluency2A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency2" value="B" id="fleuncy2B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -491,19 +489,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim2" value="A" id="dissim2A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim2" value="B" id="dissim2B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim2" value="A" id="dissim2A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim2" value="B" id="dissim2B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -534,20 +532,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency3" value="A" id="fluency3A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency3" value="B" id="fleuncy3B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency3" value="A" id="fluency3A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency3" value="B" id="fleuncy3B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -566,19 +564,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim3" value="A" id="dissim3A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim3" value="B" id="dissim3B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim3" value="A" id="dissim3A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim3" value="B" id="dissim3B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -609,20 +607,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency4" value="A" id="fluency4A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency4" value="B" id="fleuncy4B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency4" value="A" id="fluency4A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency4" value="B" id="fleuncy4B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -641,19 +639,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim4" value="A" id="dissim4A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim4" value="B" id="dissim4B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim4" value="A" id="dissim4A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim4" value="B" id="dissim4B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -684,20 +682,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency5" value="A" id="fluency5A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency5" value="B" id="fleuncy5B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency5" value="A" id="fluency5A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency5" value="B" id="fleuncy5B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -716,19 +714,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim5" value="A" id="dissim5A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim5" value="B" id="dissim5B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim5" value="A" id="dissim5A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim5" value="B" id="dissim5B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -759,20 +757,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency6" value="A" id="fluency6A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency6" value="B" id="fleuncy6B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency6" value="A" id="fluency6A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency6" value="B" id="fleuncy6B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -791,19 +789,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim6" value="A" id="dissim6A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim6" value="B" id="dissim6B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim6" value="A" id="dissim6A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim6" value="B" id="dissim6B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -834,20 +832,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency7" value="A" id="fluency7A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency7" value="B" id="fleuncy7B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency7" value="A" id="fluency7A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency7" value="B" id="fleuncy7B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -866,19 +864,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim7" value="A" id="dissim7A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim7" value="B" id="dissim7B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim7" value="A" id="dissim7A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim7" value="B" id="dissim7B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -909,20 +907,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency8" value="A" id="fluency8A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency8" value="B" id="fleuncy8B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency8" value="A" id="fluency8A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency8" value="B" id="fleuncy8B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -941,19 +939,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim8" value="A" id="dissim8A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim8" value="B" id="dissim8B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim8" value="A" id="dissim8A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim8" value="B" id="dissim8B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -984,20 +982,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency9" value="A" id="fluency9A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency9" value="B" id="fleuncy9B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency9" value="A" id="fluency9A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency9" value="B" id="fleuncy9B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -1016,19 +1014,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim9" value="A" id="dissim9A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim9" value="B" id="dissim9B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim9" value="A" id="dissim9A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim9" value="B" id="dissim9B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -1059,20 +1057,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency10" value="A" id="fluency10A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency10" value="B" id="fleuncy10B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency10" value="A" id="fluency10A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency10" value="B" id="fleuncy10B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -1091,19 +1089,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim10" value="A" id="dissim10A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim10" value="B" id="dissim10B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim10" value="A" id="dissim10A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim10" value="B" id="dissim10B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -1134,20 +1132,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency11" value="A" id="fluency11A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency11" value="B" id="fleuncy11B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency11" value="A" id="fluency11A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency11" value="B" id="fleuncy11B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -1166,19 +1164,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim11" value="A" id="dissim11A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim11" value="B" id="dissim11B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim11" value="A" id="dissim11A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim11" value="B" id="dissim11B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -1209,20 +1207,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency12" value="A" id="fluency12A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency12" value="B" id="fleuncy12B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency12" value="A" id="fluency12A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency12" value="B" id="fleuncy12B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -1241,19 +1239,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim12" value="A" id="dissim12A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim12" value="B" id="dissim12B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim12" value="A" id="dissim12A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim12" value="B" id="dissim12B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -1284,20 +1282,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency13" value="A" id="fluency13A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency13" value="B" id="fleuncy13B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency13" value="A" id="fluency13A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency13" value="B" id="fleuncy13B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -1316,19 +1314,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim13" value="A" id="dissim13A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim13" value="B" id="dissim13B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim13" value="A" id="dissim13A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim13" value="B" id="dissim13B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -1359,20 +1357,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency14" value="A" id="fluency14A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency14" value="B" id="fleuncy14B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency14" value="A" id="fluency14A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency14" value="B" id="fleuncy14B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -1391,19 +1389,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim14" value="A" id="dissim14A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim14" value="B" id="dissim14B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim14" value="A" id="dissim14A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim14" value="B" id="dissim14B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -1434,20 +1432,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency15" value="A" id="fluency15A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency15" value="B" id="fleuncy15B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency15" value="A" id="fluency15A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency15" value="B" id="fleuncy15B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -1466,19 +1464,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim15" value="A" id="dissim15A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim15" value="B" id="dissim15B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim15" value="A" id="dissim15A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim15" value="B" id="dissim15B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -1509,20 +1507,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency16" value="A" id="fluency16A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency16" value="B" id="fleuncy16B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency16" value="A" id="fluency16A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency16" value="B" id="fleuncy16B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -1541,19 +1539,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim16" value="A" id="dissim16A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim16" value="B" id="dissim16B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim16" value="A" id="dissim16A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim16" value="B" id="dissim16B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -1584,20 +1582,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency17" value="A" id="fluency17A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency17" value="B" id="fleuncy17B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency17" value="A" id="fluency17A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency17" value="B" id="fleuncy17B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -1616,19 +1614,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim17" value="A" id="dissim17A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim17" value="B" id="dissim17B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim17" value="A" id="dissim17A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim17" value="B" id="dissim17B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -1659,20 +1657,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency18" value="A" id="fluency18A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency18" value="B" id="fleuncy18B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency18" value="A" id="fluency18A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency18" value="B" id="fleuncy18B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -1689,21 +1687,21 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!---->
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim18" value="A" id="dissim18A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim18" value="B" id="dissim18B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim18" value="A" id="dissim18A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim18" value="B" id="dissim18B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -1734,20 +1732,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency19" value="A" id="fluency19A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency19" value="B" id="fleuncy19B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency19" value="A" id="fluency19A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency19" value="B" id="fleuncy19B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -1766,19 +1764,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim19" value="A" id="dissim19A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim19" value="B" id="dissim19B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim19" value="A" id="dissim19A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim19" value="B" id="dissim19B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -1809,20 +1807,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency20" value="A" id="fluency20A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency20" value="B" id="fleuncy20B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency20" value="A" id="fluency20A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency20" value="B" id="fleuncy20B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -1841,19 +1839,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim20" value="A" id="dissim20A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim20" value="B" id="dissim20B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim20" value="A" id="dissim20A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim20" value="B" id="dissim20B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -1884,20 +1882,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency21" value="A" id="fluency21A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency21" value="B" id="fleuncy21B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency21" value="A" id="fluency21A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency21" value="B" id="fleuncy21B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -1916,19 +1914,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim21" value="A" id="dissim21A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim21" value="B" id="dissim21B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim21" value="A" id="dissim21A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim21" value="B" id="dissim21B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -1959,20 +1957,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency22" value="A" id="fluency22A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency22" value="B" id="fleuncy22B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency22" value="A" id="fluency22A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency22" value="B" id="fleuncy22B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -1991,19 +1989,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim22" value="A" id="dissim22A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim22" value="B" id="dissim22B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim22" value="A" id="dissim22A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim22" value="B" id="dissim22B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -2034,20 +2032,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency23" value="A" id="fluency23A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency23" value="B" id="fleuncy23B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency23" value="A" id="fluency23A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency23" value="B" id="fleuncy23B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -2066,19 +2064,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim23" value="A" id="dissim23A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim23" value="B" id="dissim23B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim23" value="A" id="dissim23A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim23" value="B" id="dissim23B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -2109,20 +2107,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency24" value="A" id="fluency24A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency24" value="B" id="fleuncy24B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency24" value="A" id="fluency24A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency24" value="B" id="fleuncy24B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -2141,19 +2139,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim24" value="A" id="dissim24A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim24" value="B" id="dissim24B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim24" value="A" id="dissim24A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim24" value="B" id="dissim24B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -2184,20 +2182,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency25" value="A" id="fluency25A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency25" value="B" id="fleuncy25B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency25" value="A" id="fluency25A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency25" value="B" id="fleuncy25B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -2216,19 +2214,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim25" value="A" id="dissim25A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim25" value="B" id="dissim25B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim25" value="A" id="dissim25A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim25" value="B" id="dissim25B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -2259,20 +2257,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency26" value="A" id="fluency26A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency26" value="B" id="fleuncy26B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency26" value="A" id="fluency26A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency26" value="B" id="fleuncy26B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -2291,19 +2289,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim26" value="A" id="dissim26A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim26" value="B" id="dissim26B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim26" value="A" id="dissim26A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim26" value="B" id="dissim26B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -2334,20 +2332,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency27" value="A" id="fluency27A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency27" value="B" id="fleuncy27B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency27" value="A" id="fluency27A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency27" value="B" id="fleuncy27B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -2366,19 +2364,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim27" value="A" id="dissim27A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim27" value="B" id="dissim27B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim27" value="A" id="dissim27A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim27" value="B" id="dissim27B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -2409,20 +2407,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency28" value="A" id="fluency28A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency28" value="B" id="fleuncy28B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency28" value="A" id="fluency28A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency28" value="B" id="fleuncy28B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -2441,19 +2439,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim28" value="A" id="dissim28A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim28" value="B" id="dissim28B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim28" value="A" id="dissim28A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim28" value="B" id="dissim28B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -2484,20 +2482,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency29" value="A" id="fluency29A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency29" value="B" id="fleuncy29B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency29" value="A" id="fluency29A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency29" value="B" id="fleuncy29B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -2516,19 +2514,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim29" value="A" id="dissim29A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim29" value="B" id="dissim29B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim29" value="A" id="dissim29A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim29" value="B" id="dissim29B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -2559,20 +2557,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency30" value="A" id="fluency30A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency30" value="B" id="fleuncy30B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency30" value="A" id="fluency30A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency30" value="B" id="fleuncy30B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -2591,19 +2589,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim30" value="A" id="dissim30A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim30" value="B" id="dissim30B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim30" value="A" id="dissim30A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim30" value="B" id="dissim30B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
 
     </div>
@@ -2634,20 +2632,20 @@ function updateExamples(example, field, score)
                 </div>
             </div>
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                Most fluent-->
-<!--                <br/>-->
-<!--            <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency31" value="A" id="fluency31A"> A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="fluency31" value="B" id="fleuncy31B"> B-->
-<!--                    </label>-->
-<!--                </div>-->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                Most fluent
+                <br/>
+            <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency31" value="A" id="fluency31A"> A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="fluency31" value="B" id="fleuncy31B"> B
+                    </label>
+                </div>
+            </div>
 
             <div class="col-2 form-group text-center">
                 Closest in meaning
@@ -2666,19 +2664,19 @@ function updateExamples(example, field, score)
 
 
 
-<!--            <div class="col-2 form-group text-center">-->
-<!--                More dissimilar words/phrasing-->
-<!--                <br/>-->
-<!--                -->
-<!--                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim31" value="A" id="dissim31A" > A-->
-<!--                    </label>-->
-<!--                    <label class="btn btn-info px-3">-->
-<!--                        <input type="radio" name="dissim31" value="B" id="dissim31B" > B-->
-<!--                    </label>-->
-<!--                </div> -->
-<!--            </div>-->
+            <div class="col-2 form-group text-center">
+                More dissimilar words/phrasing
+                <br/>
+                
+                <div class="btn-group-vertical btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim31" value="A" id="dissim31A" > A
+                    </label>
+                    <label class="btn btn-info px-3">
+                        <input type="radio" name="dissim31" value="B" id="dissim31B" > B
+                    </label>
+                </div> 
+            </div>
         </div>
     </div>
 </div>
@@ -2721,18 +2719,16 @@ function checkScores() {
         alert('You cannot submit this HIT without giving your explicit consent!');
         return false;
     }
-    if(getCheckValue('meaningex0') != 'A' || getCheckValue('meaningex1') != 'A')
+    if(getCheckValue('meaningex0') != 'A' || getCheckValue('dissimex0') != 'A' || getCheckValue('meaningex1') != 'A' || getCheckValue('dissimex1') != 'B' || getCheckValue('fluencyex0') != 'B' || getCheckValue('fluencyex1') != 'B')
     {
         alert('You must get the examples correct!')
         return false;
     }
     
 	// grammar - mean - simi
-	//var cnames = [ "meaning", "dissim", "fluency"]; //"grammar",
-	var cnames = ["meaning"]; //"grammar",
-	//var actual_names = ["Meaning", "Dissimilarity", "Fluency"] //"Fluency",
-	var actual_names = ["Meaning"] //"Fluency",
-
+	var cnames = [ "meaning", "dissim", "fluency"]; //"grammar",
+	var actual_names = ["Meaning", "Dissimilarity", "Fluency"] //"Fluency", 
+	
 	var N_sent = 32;
 	for(var i = 0; i < N_sent; i ++)
 	{
@@ -2765,8 +2761,7 @@ function validateForm() {
 <script>
 
 function collectData() {
-  //var cnames = ["meaning", "dissim", "fluency"];
-  var cnames = ["meaning"];
+  var cnames = ["meaning", "dissim", "fluency"];
   var N_sent = 32; // number of sentences
   var data = {};
 
